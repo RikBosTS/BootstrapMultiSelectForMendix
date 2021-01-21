@@ -222,6 +222,23 @@ iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lD
             <category>Events</category>
             <description>The progress message to show when executing the onchange microflow</description>
         </property>
+        <property key="onDropdownHideMicroflow" type="microflow" required="false">
+            <caption>On dropdown close</caption>
+            <category>Events (custom)</category>
+            <description>Run this microflow when the dropdown is closed</description>
+            <returnType type="Void"/>
+        </property>
+        <property key="onDropdownHideMicroflowOnlyOnChanged" type="boolean" required="true" defaultValue="true">
+            <caption>Only when changed</caption>
+            <category>Events (custom)</category>
+            <description>Only trigger the dropdown hide flow when there was a change</description>
+        </property>
+        <property key="onDropdownHideMicroflowShowProgress" type="boolean" defaultValue="true">
+            <caption>Show Progress Bar during OnClose</caption>
+            <category>Events (custom)</category>
+            <description>Controls whether a progress bar should be displayed when executing the onclose microflow
+            </description>
+        </property>
         <property key="selectAllText" type="translatableString">
             <caption>Select All text</caption>
             <category>Strings</category>
